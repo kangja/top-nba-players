@@ -125,7 +125,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |June 15| Present | Incomplete
 
 ## Priority Matrix
-
+![Priority Matric](https://git.generalassemb.ly/kangja0801/new-project/blob/master/Priority-Matrix.png).
 
 
 ## Timeframes
