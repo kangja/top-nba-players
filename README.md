@@ -160,6 +160,7 @@ https://wireframe.cc/wbS2nO
 - Render player's GIF on page 
 - Render player's data on page
 - Make sure the delete button works to delete user's favorite players.
+- Search bar that searches for NBA players
 
 #### PostMVP  
 
