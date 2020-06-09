@@ -187,7 +187,7 @@ https://wireframe.cc/wbS2nO
 
 | Component                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML Structure                          |    H     |      2hrs      |      min      |     min     |
+| Basic HTML Structure                          |    H     |      2hrs      |      hrs      |     hrs     |
 | Basic CSS                                     |    H     |      2hrs      |      hrs      |     hrs     |
 | More HTML                                     |    H     |      4hrs      |      hrs      |     hrs     |
 | API to Display Player's Randomized GIF        |    H     |      4hrs      |      hrs      |     hrs     |
