@@ -173,7 +173,7 @@ https://wireframe.cc/wbS2nO
 |---|---| ---|
 |June 8| Project Plan(Wireframes / priority Matric / Time Frames) | Complete
 |June 9| Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page)| Incomplete
-|June 10 CSS / Remove Buttons | Incomplete
+|June 10| CSS / Remove Buttons | Incomplete
 |June 11| More CSS | Incomplete
 |June 12| MVP | Incomplete
 |June 15| Present | Incomplete
