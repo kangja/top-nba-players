@@ -90,6 +90,61 @@
 
 ```
 
+[NBA Players Statistics API] (https://api.giphy.com/v1/gifs/search?api_key=6QonJK5XS8DaWTExlkhPXmM4DTyFXcLA&q=LeBron James&limit=25&offset=0&rating=G&lang=en)
+###API Data Sample
+```
+{
+   "data":
+   [
+       {
+           "type": "gif",
+           "id": "3o7aTnQqygA3TcukFi",
+           "url": "https://giphy.com/gifs/nba-basketball-3o7aTnQqygA3TcukFi",
+           "slug": "nba-basketball-3o7aTnQqygA3TcukFi",
+           "bitly_gif_url": "https://gph.is/2dFtY7Q",
+           "bitly_url": "https://gph.is/2dFtY7Q",
+           "embed_url": "https://giphy.com/embed/3o7aTnQqygA3TcukFi",
+           "username": "nba",
+           "source": "https://nba.com",
+           "title": "lebron james photobomb GIF by NBA",
+           "rating": "g",
+           "content_url": "",
+           "source_tld": "nba.com",
+           "source_post_url": "https://nba.com",
+           "is_sticker": 0,
+           "import_datetime": "2016-10-04 13:28:27",
+           "trending_datetime": "2018-06-16 21:00:01",
+           "images":
+           {
+               "downsized_large":
+               {
+                   "height": "270",
+                   "size": "1057044",
+                   "url": "https://media0.giphy.com/media/3o7aTnQqygA3TcukFi/giphy.gif?cid=b74736c9c557d70c2510f03ec2f1c18316824beb1511f370&rid=giphy.gif",
+                   "width": "480"
+               },
+               "fixed_height_small_still":
+               {
+                   "height": "100",
+                   "size": "11606",
+                   "url": "https://media0.giphy.com/media/3o7aTnQqygA3TcukFi/100_s.gif?cid=b74736c9c557d70c2510f03ec2f1c18316824beb1511f370&rid=100_s.gif",
+                   "width": "178"
+               },
+               "original":
+               {
+                   "frames": "16",
+                   "hash": "d8ac4361f9829ff8f6fa4741e0929afe",
+                   "height": "270",
+                   "mp4": "https://media0.giphy.com/media/3o7aTnQqygA3TcukFi/giphy.mp4?cid=b74736c9c557d70c2510f03ec2f1c18316824beb1511f370&rid=giphy.mp4",
+                   "mp4_size": "136202",
+                   "size": "1057044",
+                   "url": "https://media0.giphy.com/media/3o7aTnQqygA3TcukFi/giphy.gif?cid=b74736c9c557d70c2510f03ec2f1c18316824beb1511f370&rid=giphy.gif",
+                   "webp": "https://media0.giphy.com/media/3o7aTnQqygA3TcukFi/giphy.webp?cid=b74736c9c557d70c2510f03ec2f1c18316824beb1511f370&rid=giphy.webp",
+                   "webp_size": "257946",
+                   "width": "480"
+               }
+	     ]
+```
 
 ## Wireframes
 
@@ -99,21 +154,19 @@ https://wireframe.cc/wbS2nO
 ### MVP/PostMVP
 
 #### MVP 
+
 - Render player's GIF on page 
 - Render player's statistics on page
-- Use local storage to save user's favorites
-- Use two APIs(Giphy and NBA API)
-- Allow users to search for their favorite players and delete them. 
+- Use local storage to save and delete user's favorite players
+
 
 #### PostMVP  
+
 - Advanced CSS 
-- Adding Animation
+- Add Animation
 - Ask UI/UX Designers for advice and insights.
 
 ## Project Schedule
-
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -137,12 +190,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Structure | M | 1hr|  min | min |
-| Basic CSS Styles | M | 2hrs| hrs | hrs |
-| API to Display Randomized GIFs  | H | 2hrs | 4hrs | hrs |
-| API to Display Players' Statistics | H | 2.5hrs | hrs | hrs |
-| Additional CSS | M | 2.5hrs | hrs | hrs |
-| Total | H | 25hrs| hrs | hrs
+| HTML Structure | H | 1.5hr|  min | min |
+| Basic CSS  | H | 1.5hrs| hrs | hrs |
+| API to Display Randomized GIFs  | H | 4hrs | 4hrs | hrs |
+| API to Display Players' Statistics | H | 4hrs | hrs | hrs |
+| Local Storage | H | 5hrs | hrs | hrs |
+| More CSS | M | 4hrs | hrs | hrs |
+| Total | H | 20hrs| hrs | hrs
 
 ## Code Snippet
 
