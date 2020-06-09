@@ -93,18 +93,17 @@
 
 ## Wireframes
 
-![wireframe](https://wireframe.cc/wbS2nO)
+https://wireframe.cc/wbS2nO
 
 
 ### MVP/PostMVP
 
 #### MVP 
-- All
-- Use local storage to save user favorites
-
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Render player's GIF on page 
+- Render player's statistics on page
+- Use local storage to save user's favorites
+- Use two APIs(Giphy and NBA API)
+- Allow users to search for their favorite players and delete them. 
 
 #### PostMVP  
 - Advanced CSS 
@@ -113,16 +112,15 @@
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 8| Project Plan(Wireframes / priority Matric / Time Frames) | Complete
-|June 9| Core Application Structure (HTML and Javascript)| Incomplete
-|June 10 CSS / Local Storage) | Incomplete
-|June 11| Clean Code  | Incomplete
+|June 9| Core Application Structure (HTML and Javascript(Rendering GIFs and statistics on page)| Incomplete
+|June 10 CSS / Local Storage | Incomplete
+|June 11| More CSS | Incomplete
 |June 12| MVP | Incomplete
 |June 15| Present | Incomplete
 
@@ -141,11 +139,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | HTML Structure | M | 1hr|  min | min |
 | Basic CSS Styles | M | 2hrs| hrs | hrs |
-| Category Buttons | M | 2hrs | hr | hr |
-| API to Display Randomized GIFs  | H | 4hrs | 4hrs | hrs |
-| API to Display Players' Statistics | H | 4hrs | hrs | hrs |
-| Reset Game Function | M | 3hrs | 30 min | 30 min |
-| Additional Styling Effects (e.g. Animation, Responsive Media Queries) | L | 2hrs | hrs | hrs |
+| API to Display Randomized GIFs  | H | 2hrs | 4hrs | hrs |
+| API to Display Players' Statistics | H | 2.5hrs | hrs | hrs |
+| Additional CSS | M | 2.5hrs | hrs | hrs |
 | Total | H | 25hrs| hrs | hrs
 
 ## Code Snippet
