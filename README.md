@@ -89,7 +89,7 @@
 
 ```
 
-## API Data Sample
+## API 2 and Data Sample 2
 
 [GIPHY API](https://developers.giphy.com/docs/api/endpoint)
 
