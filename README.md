@@ -161,7 +161,6 @@ https://wireframe.cc/wbS2nO
 - Render player's data on page
 - Use local storage to save and delete user's favorite players
 
-
 #### PostMVP  
 
 - Advanced CSS 
