@@ -93,6 +93,7 @@
 
 ## Wireframes
 
+![wireframe](https://git.generalassemb.ly/kangja0801/new-project/blob/master/Wireframe.jpeg)
 
 
 ### MVP/PostMVP
