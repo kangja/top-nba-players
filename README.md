@@ -6,7 +6,7 @@
 
 ## Project Description
 
-"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and player's height, weight, position, and the team he is currently in. It uses local storage to save up to 10 players and the users have the option to remove and add their favorite player. 
+"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and player's height, position, and the team he is currently in. It uses local storage to save up to 10 players and the users have the option to remove and add their favorite player. 
 
 ## API and Data Sample
 
@@ -91,7 +91,7 @@
 
 ## API Data Sample
 
-[NBA Players Statistics API](https://developers.giphy.com/docs/api/endpoint)
+[GIPHY API](https://developers.giphy.com/docs/api/endpoint)
 
 
 ```
