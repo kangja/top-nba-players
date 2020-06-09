@@ -10,7 +10,7 @@
 
 ## API and Data Sample
 
-[NBA Players Statistics API](https://www.balldontlie.io/api/v1/players)
+[NBA Players Statistics API](https://www.balldontlie.io/api/v1/)
 
 ###API Data Sample
 ```
@@ -90,7 +90,7 @@
 
 ```
 
-[NBA Players Statistics API](https://api.giphy.com/v1/gifs/search?api_key=6QonJK5XS8DaWTExlkhPXmM4DTyFXcLA&q=LeBron%20James&limit=25&offset=0&rating=G&lang=en)
+[NBA Players Statistics API](https://api.giphy.com/v1/gifs/search)
 
 ###API Data Sample
 ```
