@@ -90,7 +90,7 @@
 
 ```
 
-[NBA Players Statistics API](https://api.giphy.com/v1/gifs/search)
+[NBA Players Statistics API](https://developers.giphy.com/docs/api/endpoint)
 
 ###API Data Sample
 ```
