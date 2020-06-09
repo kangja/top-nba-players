@@ -6,7 +6,7 @@
 
 ## Project Description
 
-"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and player's name, position, and the team he is currently in. It uses local storage to save up to 10 players and the users have the option to remove and add their favorite player. 
+"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and player's name, position, and the team he is currently in. It can save up to 10 players and the users have the option to remove and add their favorite player. 
 
 ## API and Data Sample
 
@@ -159,7 +159,7 @@ https://wireframe.cc/wbS2nO
 
 - Render player's GIF on page 
 - Render player's data on page
-- Use local storage to save and delete user's favorite players
+- Make sure the delete button works to delete user's favorite players.
 
 #### PostMVP  
 
@@ -173,7 +173,7 @@ https://wireframe.cc/wbS2nO
 |---|---| ---|
 |June 8| Project Plan(Wireframes / priority Matric / Time Frames) | Complete
 |June 9| Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page)| Incomplete
-|June 10 CSS / Local Storage | Incomplete
+|June 10 CSS / Remove Buttons | Incomplete
 |June 11| More CSS | Incomplete
 |June 12| MVP | Incomplete
 |June 15| Present | Incomplete
@@ -189,7 +189,7 @@ https://wireframe.cc/wbS2nO
 | Basic CSS  | H | 1.5hrs| hrs | hrs |
 | API to Display Randomized GIFs  | H | 4hrs | hrs | hrs |
 | API to Display Players' Statistics | H | 5hrs | hrs | hrs |
-| Local Storage | H | 6hrs | hrs | hrs |
+| Remove Buttons | H | 4hrs | hrs | hrs |
 | More CSS | M | 4.5hrs | hrs | hrs |
 | Total | H | 22.5hrs| hrs | hrs
 
