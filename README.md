@@ -135,18 +135,14 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | HTML Structure | M | 1hr|  min | min |
 | Basic CSS Styles | M | 2hrs| hrs | hrs |
 | Category Buttons | M | 2hrs | hr | hr |
-| API to Display Randomized GIFs and players' statistics | H | 4hrs | 4hrs | 4hrs |
+| API to Display Randomized GIFs  | H | 4hrs | 4hrs | hrs |
+| API to Display Players' Statistics | H | 4hrs | hrs | hrs |
 | Reset Game Function | M | 3hrs | 30 min | 30 min |
 | Additional Styling Effects (e.g. Animation, Responsive Media Queries) | L | 2hrs | hrs | hrs |
 | Total | H | 25hrs| hrs | hrs
