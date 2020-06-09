@@ -12,7 +12,6 @@
 
 [NBA Players Statistics API](https://www.balldontlie.io/#get-all-players)
 
-###API Data Sample
 ```
 "data": [
         {
@@ -90,9 +89,11 @@
 
 ```
 
+## API Data Sample
+
 [NBA Players Statistics API](https://developers.giphy.com/docs/api/endpoint)
 
-###API Data Sample
+
 ```
 {
    "data":
@@ -172,7 +173,7 @@ https://wireframe.cc/wbS2nO
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 8| Project Plan(Wireframes / priority Matric / Time Frames) | Complete
-|June 9| Core Application Structure (HTML and Javascript(Rendering GIFs and statistics on page)| Incomplete
+|June 9| Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page)| Incomplete
 |June 10 CSS / Local Storage | Incomplete
 |June 11| More CSS | Incomplete
 |June 12| MVP | Incomplete
@@ -180,7 +181,6 @@ https://wireframe.cc/wbS2nO
 
 ## Priority Matrix
 ![Priority Matric](https://git.generalassemb.ly/kangja0801/new-project/blob/master/Priority-Matrix.png).
-
 
 ## Timeframes
 
