@@ -2,15 +2,94 @@
 
 ## Project Name
 
-The name of your project.
+"Your 10 Favorite NBA Players!"
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+"Your 10 Favorite NBA Players" allows users to search for their favorite players in a search box to generate a total of 10 NBA Player's gif that is randomized and statistics. It uses local storage to save users' 10 favorite players and users have the option to remove and add their favorite player. 
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+[NBA Players Statistics API] (https://www.balldontlie.io/api/v1/players)
+
+###API Data Sample
+```
+"data": [
+        {
+            "id": 14,
+            "first_name": "Ike",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Anigbogu",
+            "position": "C",
+            "team": {
+                "id": 12,
+                "abbreviation": "IND",
+                "city": "Indiana",
+                "conference": "East",
+                "division": "Central",
+                "full_name": "Indiana Pacers",
+                "name": "Pacers"
+            },
+            "weight_pounds": null
+        },
+        {
+            "id": 25,
+            "first_name": "Ron",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Baker",
+            "position": "G",
+            "team": {
+                "id": 20,
+                "abbreviation": "NYK",
+                "city": "New York",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "New York Knicks",
+                "name": "Knicks"
+            },
+            "weight_pounds": null
+        },
+        {
+            "id": 47,
+            "first_name": "Jabari",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Bird",
+            "position": "G",
+            "team": {
+                "id": 2,
+                "abbreviation": "BOS",
+                "city": "Boston",
+                "conference": "East",
+                "division": "Atlantic",
+                "full_name": "Boston Celtics",
+                "name": "Celtics"
+            },
+            "weight_pounds": null
+        },
+        {
+            "id": 67,
+            "first_name": "MarShon",
+            "height_feet": null,
+            "height_inches": null,
+            "last_name": "Brooks",
+            "position": "G",
+            "team": {
+                "id": 15,
+                "abbreviation": "MEM",
+                "city": "Memphis",
+                "conference": "West",
+                "division": "Southwest",
+                "full_name": "Memphis Grizzlies",
+                "name": "Grizzlies"
+            },
+            "weight_pounds": null
+        }
+
+```
+
 
 ## Wireframes
 
@@ -18,20 +97,18 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+- All
+- Use local storage to save user favorites
 
 - Find and use external api 
 - Render data on page 
 - Allow user to choose favorites 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- Advanced CSS 
+- Adding Animation
+- Ask UI/UX Designers for advice and insights.
 
 ## Project Schedule
 
@@ -41,16 +118,16 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 8| Project Prompt | Incomplete
-|June 9| Wireframes / Priority Matrix / Timeframes | Incomplete
-|June 10| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|June 11| Initial Clickable Model  | Incomplete
+|June 8| Project Plan(Wireframes / priority Matric / Time Frames) | Complete
+|June 9| Core Application Structure (HTML and Javascript)| Incomplete
+|June 10 CSS / Local Storage) | Incomplete
+|June 11| Clean Code  | Incomplete
 |June 12| MVP | Incomplete
 |June 15| Present | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+
 
 ## Timeframes
 
@@ -63,6 +140,16 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| HTML Structure | M | 1hr|  min | min |
+| Basic CSS Styles | M | 2hrs| hrs | hrs |
+| Category Buttons | M | 2hrs | hr | hr |
+| API to Display Randomized GIFs and players' statistics | H | 4hrs | 4hrs | 4hrs |
+| Reset Game Function | M | 3hrs | 30 min | 30 min |
+| Additional Styling Effects (e.g. Animation, Responsive Media Queries) | L | 2hrs | hrs | hrs |
+| Total | H | 25hrs| hrs | hrs
 
 ## Code Snippet
 
