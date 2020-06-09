@@ -189,10 +189,10 @@ https://wireframe.cc/wbS2nO
 | HTML Structure | H | 1.5hr|  min | min |
 | Basic CSS  | H | 1.5hrs| hrs | hrs |
 | API to Display Randomized GIFs  | H | 4hrs | hrs | hrs |
-| API to Display Players' Statistics | H | 4hrs | hrs | hrs |
-| Local Storage | H | 5hrs | hrs | hrs |
-| More CSS | M | 4hrs | hrs | hrs |
-| Total | H | 20hrs| hrs | hrs
+| API to Display Players' Statistics | H | 5hrs | hrs | hrs |
+| Local Storage | H | 6hrs | hrs | hrs |
+| More CSS | M | 4.5hrs | hrs | hrs |
+| Total | H | 22.5hrs| hrs | hrs
 
 ## Code Snippet
 
