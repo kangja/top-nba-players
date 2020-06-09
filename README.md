@@ -6,7 +6,7 @@
 
 ## Project Description
 
-"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and render player's name, position, and the team he is currently in. It renders up to 10 players and the users have the option to remove their favorite player using delete buttons. 
+"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and render player's name, position, and the team he is currently in. It renders up to 10 players and the users have the option to remove players using delete buttons. 
 
 ## API and Data Sample
 
