@@ -10,7 +10,7 @@
 
 ## API and Data Sample
 
-[NBA Players Statistics API](https://www.balldontlie.io/#get-all-players)
+[NBA Players Data API](https://www.balldontlie.io/#get-all-players)
 
 ```
 "data": [
