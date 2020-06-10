@@ -1,10 +1,12 @@
 let playerListArray = [];
+let num = 0;
 
 // Get Giphy
 const getGiphy = async () => {
   try {
+    // e.preventDefault(); not sure when to use this
     const nameTwo = document.querySelector("input").value;
-
+    // console.log(nameTwo);
     const urlTwo = "https://api.giphy.com/v1/gifs/search";
     const apiKey = "6QonJK5XS8DaWTExlkhPXmM4DTyFXcLA";
     const finalUrl =
@@ -12,17 +14,25 @@ const getGiphy = async () => {
       `?api_key=${apiKey}&q=${nameTwo}&limit=10&offset=0&rating=G&lang=en`;
 
     const responseTwo = await axios.get(finalUrl);
+    
+    
 
-    document.querySelector("#image").src =
-      responseTwo.data.data[0].images.original.url;
+    const giphyImg = document.querySelector("#image");
 
-    return responseTwo.data.data[0].images.original.url;
+    giphyImg.src = responseTwo.data.data[0].images.original.url;
+    giphyImg.style.width = "300px";
+    giphyImg.style.height = "200px";
+
+    // giphyImg.src = responseTwo.data.data;
+    // console.log(responseTwo.data.data[0])
+
+    return Promise.resolve(responseTwo.data.data[0].images.original.url);
   } catch (error) {
     console.log(`this is an ${error}`);
   }
 };
 
-// Get Player Information
+// Get Player Data
 const getPlayer = async (e) => {
   try {
     e.preventDefault();
@@ -34,41 +44,38 @@ const getPlayer = async (e) => {
 
     // Player Name
     const playerName2 = document.querySelector("#playerName2");
-    playerName2.innerHTML = `Player Name
-   : ${name}`;
+    playerName2.innerHTML = `<strong>Player Name:</strong> ${name}`;
 
     // Team Name
     const teamName = response.data.data[0].team.full_name;
     const teamName2 = document.querySelector("#teamName2");
-    teamName2.innerHTML = `Team Name: ${teamName}`;
+    teamName2.innerHTML = `<strong>Team Name:</strong> ${teamName}`;
 
     //Position
     const positionData = response.data.data[0].position;
     const position = document.querySelector("#position");
-    position.innerHTML = `Position: ${positionData}`;
+    position.innerHTML = `<strong>Position:</strong> ${positionData}`;
 
     // Height
     const heightInFeet = response.data.data[0].height_feet;
-
     const heightInInches = response.data.data[0].height_inches;
 
     const height = document.querySelector("#height");
-    height.innerHTML = `Height: ${heightInFeet}ft ${heightInInches}inches`;
-    const feetAndInches = `${heightInFeet}ft ${heightInInches}in`;
+    height.innerHTML = `<strong>Height:</strong> ${heightInFeet}ft ${heightInInches}inches`;
 
     // Weight
     const weightInLbs = response.data.data[0].weight_pounds;
     const weight = document.querySelector("#weight");
-    weight.innerHTML = `Weight: ${weightInLbs}lbs`;
+    weight.innerHTML = `<strong>Weight:</strong> ${weightInLbs}lbs`;
+
     playerListArray.push({
       url: getGiphy(),
-      playerName: name,
-      teamName: teamName,
-      position: positionData,
-      height: feetAndInches,
-      weight: weightInLbs,
+      playerName: playerName2.innerHTML,
+      teamName: teamName2.innerHTML,
+      position: position.innerHTML,
+      height: height.innerHTML,
+      weight: weight.innerHTML,
     });
-    console.log(playerListArray);
   } catch (error) {
     console.log(`this is an ${error}`);
   }
@@ -77,27 +84,49 @@ const getPlayer = async (e) => {
 // creating submit button
 const submit = document.querySelector("button");
 submit.addEventListener("click", getGiphy);
-
 submit.addEventListener("click", getPlayer);
 
-// creating li
+//Selecting #player-container
 const listPlayer = document.querySelector("#player-container");
 
-// creating list
+// Creating a list of names on the left side
 function clickSubmit(e) {
   e.preventDefault();
 
+  const columns = document.querySelectorAll(".columns");
+  // console.log(columns);
+  if (columns.length >= 10) {
+    return null;
+  }
+
   let divPlayerName = document.createElement("div");
+  divPlayerName.className = "columns";
+  divPlayerName.setAttribute("id", playerListArray.length.toString());
 
   let pTag = document.createElement("p");
 
   let name2 = document.querySelector("input").value;
+
   pTag.innerHTML = name2;
 
   divPlayerName.append(pTag);
-  console.log(divPlayerName);
 
   divPlayerName.append(createDeleteButton());
+
+  divPlayerName.addEventListener("click", replaceValues);
+
+  // const divArray = document.querySelectorAll(".columns");
+
+  divPlayerName.addEventListener(
+    "click",
+    function (e) {
+      e = e || window.event;
+      let target = e.target;
+      num = target.id;
+      console.log(num);
+    },
+    false
+  );
 
   if (name2 !== "") {
     listPlayer.append(divPlayerName);
@@ -107,18 +136,42 @@ function clickSubmit(e) {
 
 // Create Delete Button
 function createDeleteButton() {
-  const deleteButton = document.createElement("button");
+  let deleteButton = document.createElement("button");
   deleteButton.innerText = "Delete";
-  submit.addEventListener("click", createDeleteButton);
   deleteButton.addEventListener("click", deleteListItem);
   return deleteButton;
 }
 
-submit.addEventListener("click", clickSubmit);
-
-//
+//Deleting player names
 function deleteListItem() {
   this.parentNode.remove();
 }
 
-// function createButton() {}
+submit.addEventListener("click", clickSubmit);
+
+// When name is clicked, it replaces values
+function replaceValues() {
+  const image = document.querySelector("#image");
+  image.src = playerListArray[num].url;
+
+  const playerName2 = document.querySelector("#playerName2");
+  playerName2.innerHTML = playerListArray[num].playerName;
+  console.log(num);
+  console.log(playerListArray);
+
+  const teamName2 = document.querySelector("#teamName2");
+  teamName2.innerHTML = playerListArray[num].teamName;
+  console.log(teamName2);
+
+  const position = document.querySelector("#position");
+  position.innerHTML = playerListArray[num].position;
+  console.log(position);
+
+  const height = document.querySelector("#height");
+  height.innerHTML = playerListArray[num].height;
+  console.log(height);
+
+  const weight = document.querySelector("#weight");
+  weight.innerHTML = playerListArray[num].weight;
+  console.log(weight);
+}
