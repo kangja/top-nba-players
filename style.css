@@ -5,6 +5,23 @@
   /* flex-flow: row wrap; */
 }
 
+.containerTwo {
+  display: flex;
+}
+
 #name {
   width: 200px;
 }
+
+#player-container {
+  width: 300px;
+  height: 601px;
+  border: 3px red solid;
+}
+
+#player-container > div {
+  border: 1px blue solid;
+  height: 30%;
+  width: 100%;
+}
+
