@@ -30,6 +30,7 @@ const getGiphy = async () => {
   }
 };
 
+
 // Get Player Data
 const getPlayer = async (e) => {
   try {
@@ -79,7 +80,7 @@ const getPlayer = async (e) => {
   }
 };
 
-// creating submit button
+//Creating submit button
 const submit = document.querySelector("button");
 submit.addEventListener("click", getGiphy);
 submit.addEventListener("click", getPlayer);
@@ -112,8 +113,6 @@ function clickSubmit(e) {
   divPlayerName.append(createDeleteButton());
 
   divPlayerName.addEventListener("click", replaceValues);
-
-  // const divArray = document.querySelectorAll(".columns");
 
   divPlayerName.addEventListener(
     "click",
