@@ -3,8 +3,8 @@
   background-repeat: repeat;
   background-size: 50%;
   overflow: hidden;
-} */
-/* 
+} 
+
 h1 {
   color: white;
 } */
@@ -15,6 +15,7 @@ h1 {
 
 .container-two {
   display: flex;
+  margin-top: 2px;
 }
 
 .container-three {
@@ -30,6 +31,14 @@ h1 {
   width: 215px;
 }
 
+#weight {
+  height: 202px;
+  margin-left: 17px;
+  padding-left: 9px;
+  padding-right: 9px;
+  /* border: 3px dashed yellow; */
+}
+
 #player-container {
   width: 300px;
   height: 601px;
@@ -38,9 +47,10 @@ h1 {
 
 #player-container > div {
   border: 1px blue solid;
-  height: 30%;
-  width: 100%;
   display: flex;
+  height: 100px;
+  width: 300px;
+  border-radius: 20px;
 }
 
 form {
@@ -53,22 +63,31 @@ form {
   padding-right: 15px;
   width: 191px;
   height: 200px;
+  border-right-width: 3px;
+  /* border: 3px dashed red; */
 }
 
 #teamName2 {
   padding-right: 15px;
   width: 238px;
   height: 200px;
+  /* border: 3px dashed blue; */
+  margin-right: 10px;
+  margin-left: 14px;
 }
 
 #position {
-  padding-right: 15px;
   width: 100px;
   height: 200px;
+  /* border: 3px dashed orange; */
+  padding-right: 7px;
+  margin-right: 15px;
 }
 
 #height {
   padding-right: 15px;
+  height: 202px;
+  /* border: 3px dashed lawgreen; */
 }
 
 #logo {
@@ -83,9 +102,8 @@ button {
   margin-left: 10px;
   width: 76px;
   height: 26px;
-  margin-top: 71px;
+  margin-top: 36px;
   margin-left: 29px;
-
 }
 
 #player-container {
@@ -93,10 +111,11 @@ button {
 }
 
 p {
-  margin-top: 75px;
+  margin-top: 40px;
   margin-left: 51px;
 }
 
-.columns:hover{
+.columns:hover {
   background-color: aqua;
+  color: white;
 }

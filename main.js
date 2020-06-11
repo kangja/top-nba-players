@@ -30,7 +30,6 @@ const getGiphy = async () => {
   }
 };
 
-
 // Get Player Data
 const getPlayer = async (e) => {
   try {
@@ -44,16 +43,19 @@ const getPlayer = async (e) => {
     // Player Name
     const playerName2 = document.querySelector("#playerName2");
     playerName2.innerHTML = `<strong>Player Name:</strong> ${name}`;
+    playerName2.style.border = "3px dashed red";
 
     // Team Name
     const teamName = response.data.data[0].team.full_name;
     const teamName2 = document.querySelector("#teamName2");
     teamName2.innerHTML = `<strong>Team Name:</strong> ${teamName}`;
+    teamName2.style.border = "3px dashed blue";
 
     //Position
     const positionData = response.data.data[0].position;
     const position = document.querySelector("#position");
     position.innerHTML = `<strong>Position:</strong> ${positionData}`;
+    position.style.border = "3px dashed orange";
 
     // Height
     const heightInFeet = response.data.data[0].height_feet;
@@ -61,11 +63,13 @@ const getPlayer = async (e) => {
 
     const height = document.querySelector("#height");
     height.innerHTML = `<strong>Height:</strong> ${heightInFeet}ft ${heightInInches}inches`;
+    height.style.border = "3px dashed green";
 
     // Weight
     const weightInLbs = response.data.data[0].weight_pounds;
     const weight = document.querySelector("#weight");
     weight.innerHTML = `<strong>Weight:</strong> ${weightInLbs}lbs`;
+    weight.style.border = "3px dashed yellow";
 
     playerListArray.push({
       url: getGiphy(),
@@ -150,7 +154,7 @@ submit.addEventListener("click", clickSubmit);
 function replaceValues() {
   const image = document.querySelector("#image");
   image.src = Promise.all(playerListArray[num].url);
-  console.log(playerListArray)
+  console.log(playerListArray);
 
   const playerName2 = document.querySelector("#playerName2");
   playerName2.innerHTML = playerListArray[num].playerName;
