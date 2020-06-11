@@ -11,6 +11,8 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: 10px;
+  padding-top: 150px;
+
 }
 
 #name {
@@ -39,7 +41,6 @@ form {
   padding-right: 15px;
   width: 191px;
   height: 200px;
-  padding-top: 79px;
 
 }
 

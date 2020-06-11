@@ -6,7 +6,7 @@
 
 ## Project Description
 
-"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif that is randomized and render player's name, position, and the team he is currently in. It renders up to 10 players and the users have the option to remove players using delete buttons.
+"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif and render player's name, position, and the team he is currently in. It renders up to 10 players and the users have the option to remove players using delete buttons.
 
 ## API and Data Sample
 
@@ -187,11 +187,11 @@ https://wireframe.cc/wbS2nO
 
 | Component                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML Structure                          |    H     |      2hrs      |      hrs      |     hrs     |
-| Basic CSS                                     |    H     |      2hrs      |      hrs      |     hrs     |
+| Basic HTML Structure                          |    H     |      2hrs      |     3hrs      |     hrs     |
+| Basic CSS                                     |    H     |      2hrs      |     2hrs      |     hrs     |
 | More HTML                                     |    H     |      4hrs      |      hrs      |     hrs     |
-| API to Display Player's Randomized GIF        |    H     |      4hrs      |      hrs      |     hrs     |
-| API to Display Players' Data                  |    H     |      5hrs      |      hrs      |     hrs     |
+| API to Display Player's Randomized GIF        |    H     |      4hrs      |     6hrs      |     hrs     |
+| API to Display Players' Data                  |    H     |      5hrs      |     5hrs      |     hrs     |
 | Search bar that targets GIF and data API      |    H     |      3hrs      |      hrs      |     hrs     |
 | Make tables that render player's GIF and data |    H     |      2hrs      |      hrs      |     hrs     |
 | Remove Buttons                                |    H     |      4hrs      |      hrs      |     hrs     |

@@ -14,8 +14,6 @@ const getGiphy = async () => {
       `?api_key=${apiKey}&q=${nameTwo}&limit=10&offset=0&rating=G&lang=en`;
 
     const responseTwo = await axios.get(finalUrl);
-    
-    
 
     const giphyImg = document.querySelector("#image");
 
@@ -26,7 +24,7 @@ const getGiphy = async () => {
     // giphyImg.src = responseTwo.data.data;
     // console.log(responseTwo.data.data[0])
 
-    return Promise.resolve(responseTwo.data.data[0].images.original.url);
+    return Promise.all(responseTwo.data.data[0].images.original.url);
   } catch (error) {
     console.log(`this is an ${error}`);
   }
@@ -152,7 +150,8 @@ submit.addEventListener("click", clickSubmit);
 // When name is clicked, it replaces values
 function replaceValues() {
   const image = document.querySelector("#image");
-  image.src = playerListArray[num].url;
+  image.src = Promise.resolve(playerListArray[num].url);
+  console.log(playerListArray)
 
   const playerName2 = document.querySelector("#playerName2");
   playerName2.innerHTML = playerListArray[num].playerName;
