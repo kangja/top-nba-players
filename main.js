@@ -150,7 +150,7 @@ submit.addEventListener("click", clickSubmit);
 // When name is clicked, it replaces values
 function replaceValues() {
   const image = document.querySelector("#image");
-  image.src = Promise.resolve(playerListArray[num].url);
+  image.src = Promise.all(playerListArray[num].url);
   console.log(playerListArray)
 
   const playerName2 = document.querySelector("#playerName2");
