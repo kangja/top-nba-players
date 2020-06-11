@@ -90,6 +90,9 @@ form {
 #height {
   padding-right: 15px;
   height: 202px;
+  padding-left: 17px;
+  width: 140px;
+  height: 202px;
   /* border: 3px dashed lawgreen; */
 }
 

@@ -1,5 +1,6 @@
 let playerListArray = [];
 let num = 0;
+const giphyImg = document.querySelector("#image");
 
 // Get Giphy
 const getGiphy = async () => {
@@ -9,15 +10,13 @@ const getGiphy = async () => {
     // console.log(nameTwo);
     const urlTwo = "https://api.giphy.com/v1/gifs/search";
     const apiKey = "6QonJK5XS8DaWTExlkhPXmM4DTyFXcLA";
-    const finalUrl =
-      urlTwo +
-      `?api_key=${apiKey}&q=${nameTwo}&limit=10&offset=0&rating=G&lang=en`;
+    const finalUrl = `${urlTwo}?api_key=${apiKey}&q=${nameTwo}&limit=10&offset=0&rating=G&lang=en`;
 
     const responseTwo = await axios.get(finalUrl);
+    console.log(responseTwo);
 
-    const giphyImg = document.querySelector("#image");
-
-    giphyImg.src = responseTwo.data.data[0].images.original.url;
+    const src = responseTwo.data.data[0].images.original.url;
+    giphyImg.src = src;
     giphyImg.style.width = "300px";
     giphyImg.style.height = "200px";
     giphyImg.style.border = "3px dashed red";
@@ -25,7 +24,7 @@ const getGiphy = async () => {
     // giphyImg.src = responseTwo.data.data;
     // console.log(responseTwo.data.data[0])
 
-    return Promise.all(responseTwo.data.data[0].images.original.url);
+    return src;
   } catch (error) {
     console.log(`this is an ${error}`);
   }
@@ -73,12 +72,12 @@ const getPlayer = async (e) => {
     weight.style.border = "3px dashed skyblue";
 
     playerListArray.push({
-      url: getGiphy(),
-      playerName: playerName2.innerHTML,
-      teamName: teamName2.innerHTML,
-      position: position.innerHTML,
-      height: height.innerHTML,
-      weight: weight.innerHTML,
+      url: giphyImg.src,
+      playerName: playerName2.textContent,
+      teamName: teamName2.textContent,
+      position: position.textContent,
+      height: height.textContent,
+      weight: weight.textContent,
     });
   } catch (error) {
     console.log(`this is an ${error}`);
@@ -154,7 +153,7 @@ submit.addEventListener("click", clickSubmit);
 // When name is clicked, it replaces values
 function replaceValues() {
   const image = document.querySelector("#image");
-  image.src = Promise.all(playerListArray[num].url);
+  image.src = playerListArray[num].url;
   console.log(playerListArray);
 
   const playerName2 = document.querySelector("#playerName2");
