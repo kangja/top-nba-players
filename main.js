@@ -20,6 +20,7 @@ const getGiphy = async () => {
     giphyImg.src = responseTwo.data.data[0].images.original.url;
     giphyImg.style.width = "300px";
     giphyImg.style.height = "200px";
+    giphyImg.style.border = "3px dashed red";
 
     // giphyImg.src = responseTwo.data.data;
     // console.log(responseTwo.data.data[0])
@@ -43,19 +44,19 @@ const getPlayer = async (e) => {
     // Player Name
     const playerName2 = document.querySelector("#playerName2");
     playerName2.innerHTML = `<strong>Player Name:</strong> ${name}`;
-    playerName2.style.border = "3px dashed red";
+    playerName2.style.border = "3px dashed blue";
 
     // Team Name
     const teamName = response.data.data[0].team.full_name;
     const teamName2 = document.querySelector("#teamName2");
     teamName2.innerHTML = `<strong>Team Name:</strong> ${teamName}`;
-    teamName2.style.border = "3px dashed blue";
+    teamName2.style.border = "3px dashed orange";
 
     //Position
     const positionData = response.data.data[0].position;
     const position = document.querySelector("#position");
     position.innerHTML = `<strong>Position:</strong> ${positionData}`;
-    position.style.border = "3px dashed orange";
+    position.style.border = "3px dashed green";
 
     // Height
     const heightInFeet = response.data.data[0].height_feet;
@@ -63,13 +64,13 @@ const getPlayer = async (e) => {
 
     const height = document.querySelector("#height");
     height.innerHTML = `<strong>Height:</strong> ${heightInFeet}ft ${heightInInches}inches`;
-    height.style.border = "3px dashed green";
+    height.style.border = "3px dashed yellow";
 
     // Weight
     const weightInLbs = response.data.data[0].weight_pounds;
     const weight = document.querySelector("#weight");
     weight.innerHTML = `<strong>Weight:</strong> ${weightInLbs}lbs`;
-    weight.style.border = "3px dashed yellow";
+    weight.style.border = "3px dashed skyblue";
 
     playerListArray.push({
       url: getGiphy(),
