@@ -42,6 +42,12 @@ body {
   font-size: 18px;
   text-align: center;
   border-radius: 10px;
+  border: 3px solid #909fc4;
+}
+
+#name:hover {
+  background-color: #909fc4;
+  color: white;
 }
 
 #player-container {
@@ -127,10 +133,14 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 10px;
+  font-weight: bold;
+  color: #7a9ac7;
+  border: 3px solid #909fc4;
 }
 
 #submit:hover {
   background-color: #93b1c3;
+  color: white;
 }
 
 p {
