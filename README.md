@@ -6,7 +6,7 @@
 
 ## Project Description
 
-"Your 10 Favorite NBA Players" allows users to search for their favorite player in a search box to generate a player's gif and render player's name, position, and the team he is currently in. It renders up to 10 players and the users have the option to remove players using delete buttons.
+"Your 10 Favorite NBA Players" allows users to search for their 10 favorite players in a search box to generate a player's gif and render player's name, team name, position, height, and weight. It renders up to 10 players and the users have the option to remove players using delete buttons. Users have to make sure they have to search for players who are currently in the league. If not, they will not get the full data rendered on the page.
 
 ## API and Data Sample
 
@@ -156,10 +156,9 @@ https://wireframe.cc/wbS2nO
 #### MVP
 
 - Render player's GIF on page
-- Render player's data on page
+- Render player's data on page (player name, team name, position, height, and weight)
 - Make sure the delete button works to delete user's favorite players.
 - Search bar that searches for NBA players
-- Make tables to render player's GIF and data.
 
 #### PostMVP
 
@@ -173,10 +172,10 @@ https://wireframe.cc/wbS2nO
 | Day     | Deliverable                                                                               | Status     |
 | ------- | ----------------------------------------------------------------------------------------- | ---------- |
 | June 8  | Project Plan(Wireframes / priority Matric / Time Frames)                                  | Complete   |
-| June 9  | Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page) | Incomplete |
-| June 10 | CSS / Remove Buttons / Search Bar                                                         | Incomplete |
-| June 11 | More CSS                                                                                  | Incomplete |
-| June 12 | MVP                                                                                       | Incomplete |
+| June 9  | Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page) | Complete |
+| June 10 | CSS / Remove Buttons / Search Bar                                                         | Complete |
+| June 11 | More CSS                                                                                  | Complete |
+| June 12 | MVP                                                                                       | Complete |
 | June 15 | Present                                                                                   | Incomplete |
 
 ## Priority Matrix
@@ -187,15 +186,15 @@ https://wireframe.cc/wbS2nO
 
 | Component                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML Structure                          |    H     |      2hrs      |     3hrs      |     hrs     |
-| Basic CSS                                     |    H     |      2hrs      |     2hrs      |     hrs     |
-| More HTML                                     |    H     |      4hrs      |      hrs      |     hrs     |
-| API to Display Player's Randomized GIF        |    H     |      4hrs      |     6hrs      |     hrs     |
-| API to Display Players' Data                  |    H     |      5hrs      |     5hrs      |     hrs     |
-| Search bar that targets GIF and data API      |    H     |      3hrs      |      hrs      |     hrs     |
-| Make tables that render player's GIF and data |    H     |      2hrs      |      hrs      |     hrs     |
-| Remove Buttons                                |    H     |      4hrs      |      hrs      |     hrs     |
-| More CSS                                      |    M     |      5hrs      |      hrs      |     hrs     |
+| Basic HTML Structure                          |    H     |      2hrs      |     3hrs      |     3hrs     |
+| Basic CSS                                     |    H     |      2hrs      |     2hrs      |     2hrs     |
+| More HTML                                     |    H     |      4hrs      |     4hrs      |     4hrs     |
+| API to Display Player's Randomized GIF        |    H     |      4hrs      |     6hrs      |     6hrs     |
+| API to Display Players' Data                  |    H     |      5hrs      |     5hrs      |     5hrs     |
+| Search bar that targets GIF and data API      |    H     |      3hrs      |     4hrs      |     4hrs     |
+| Make tables that render player's GIF and data |    H     |      2hrs      |     9hrs      |     9hrs     |
+| Remove Buttons                                |    H     |      4hrs      |     5hrs      |     5hrs     |
+| More CSS                                      |    M     |      5hrs      |     10hrs      |    10hrs     |
 | Total                                         |    H     |     31hrs      |      hrs      |     hrs     |
 
 ## Code Snippet
