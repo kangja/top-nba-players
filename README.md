@@ -1,5 +1,5 @@
 # Project Overview
-[Your 10 Favorite NBA Players!"](https://pages.git.generalassemb.ly/kangja0801/nba-players/)
+[Your 10 Favorite NBA Players!](https://pages.git.generalassemb.ly/kangja0801/nba-players/)
 
 ## Project Name
 
