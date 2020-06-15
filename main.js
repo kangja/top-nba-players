@@ -121,9 +121,13 @@ function clickSubmit(e) {
 
   divPlayerName.addEventListener("click", replaceValues);
 
+  // I got the function template from stackoverflow. (URL: https://stackoverflow.com/questions/9012537/how-to-get-the-element-clicked-for-the-whole-document?fbclid=IwAR1HJCp7BGttzLAs-SB1TTY3v2aaKxXHFTxpj7KdIVFW35ycbnTpDcCIcWA)
+
+  // The function allows me to get the current element(whatever element that is) in an HTML document that I clicked. E is whatever I'm clicking in HTML and it will save the value of the clicked element's id in a variable so that I could access it later.
+
   divPlayerName.addEventListener(
     "click",
-    // e is whatever i'm clicking in html and it shows what's
+
     function (e) {
       e = e || window.event;
       let target = e.target;

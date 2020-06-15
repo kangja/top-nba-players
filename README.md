@@ -172,10 +172,10 @@ https://wireframe.cc/wbS2nO
 | Day     | Deliverable                                                                               | Status     |
 | ------- | ----------------------------------------------------------------------------------------- | ---------- |
 | June 8  | Project Plan(Wireframes / priority Matric / Time Frames)                                  | Complete   |
-| June 9  | Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page) | Complete |
-| June 10 | CSS / Remove Buttons / Search Bar                                                         | Complete |
-| June 11 | More CSS                                                                                  | Complete |
-| June 12 | MVP                                                                                       | Complete |
+| June 9  | Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page) | Complete   |
+| June 10 | CSS / Remove Buttons / Search Bar                                                         | Complete   |
+| June 11 | More CSS                                                                                  | Complete   |
+| June 12 | MVP                                                                                       | Complete   |
 | June 15 | Present                                                                                   | Incomplete |
 
 ## Priority Matrix
@@ -186,26 +186,38 @@ https://wireframe.cc/wbS2nO
 
 | Component                                     | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML Structure                          |    H     |      2hrs      |     3hrs      |     3hrs     |
-| Basic CSS                                     |    H     |      2hrs      |     2hrs      |     2hrs     |
-| More HTML                                     |    H     |      4hrs      |     4hrs      |     4hrs     |
-| API to Display Player's Randomized GIF        |    H     |      4hrs      |     6hrs      |     6hrs     |
-| API to Display Players' Data                  |    H     |      5hrs      |     5hrs      |     5hrs     |
-| Search bar that targets GIF and data API      |    H     |      3hrs      |     4hrs      |     4hrs     |
-| Make tables that render player's GIF and data |    H     |      2hrs      |     9hrs      |     9hrs     |
-| Remove Buttons                                |    H     |      4hrs      |     5hrs      |     5hrs     |
-| More CSS                                      |    M     |      5hrs      |     10hrs      |    10hrs     |
+| Basic HTML Structure                          |    H     |      2hrs      |     3hrs      |    3hrs     |
+| Basic CSS                                     |    H     |      2hrs      |     2hrs      |    2hrs     |
+| More HTML                                     |    H     |      4hrs      |     4hrs      |    4hrs     |
+| API to Display Player's Randomized GIF        |    H     |      4hrs      |     6hrs      |    6hrs     |
+| API to Display Players' Data                  |    H     |      5hrs      |     5hrs      |    5hrs     |
+| Search bar that targets GIF and data API      |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Make tables that render player's GIF and data |    H     |      2hrs      |     9hrs      |    9hrs     |
+| Remove Buttons                                |    H     |      4hrs      |     5hrs      |    5hrs     |
+| More CSS                                      |    M     |      5hrs      |     10hrs     |    10hrs    |
 | Total                                         |    H     |     31hrs      |      hrs      |     hrs     |
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
+I got the function template from stackoverflow. (URL: https://stackoverflow.com/questions/9012537/how-to-get-the-element-clicked-for-the-whole-document?fbclid=IwAR1HJCp7BGttzLAs-SB1TTY3v2aaKxXHFTxpj7KdIVFW35ycbnTpDcCIcWA)
+
+The function allows me to get the current element(whatever element that is) in an HTML document that I clicked. E is whatever I'm clicking in HTML and it will save the value of the clicked element's id in a variable so that I could access it later.
+
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+  function (e) {
+      e = e || window.event;
+      let target = e.target;
+      num = target.id;
+      console.log(num);
+    },
+    false
+  );
+
 }
 ```
+
 
 ## Change Log
 
