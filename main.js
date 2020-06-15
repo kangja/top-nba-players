@@ -2,7 +2,7 @@ let playerListArray = [];
 let num = 0;
 const giphyImg = document.querySelector("#image");
 
-// Get Giphy for a specific player
+// Get GIFs for specific players. It allows users to get specific GIFs for players that users type in a search bar.
 const getGiphy = async () => {
   try {
     const nameTwo = document.querySelector("input").value;
@@ -23,7 +23,7 @@ const getGiphy = async () => {
   }
 };
 
-// Get Player Data
+// Get Player Data. Users search for their favorite players' name in a search bar and it will render player's name, team name, position, height, and weight on page.
 const getPlayer = async (e) => {
   try {
     e.preventDefault();
@@ -60,7 +60,6 @@ const getPlayer = async (e) => {
     // Height
     const heightInFeet = response.data.data[0].height_feet;
     const heightInInches = response.data.data[0].height_inches;
-
     const height = document.querySelector("#height");
     height.innerHTML = `<div id="data-container4"><strong id="height-strong">Height:</strong> <span id="height-span">${heightInFeet}ft ${heightInInches}inches</span></div>`;
     height.style.border = "6px ridge #848292";
@@ -75,6 +74,7 @@ const getPlayer = async (e) => {
     weight.style.backgroundColor = "#b39f86";
     weight.style.borderRadius = "25% 15%";
 
+    // I'm pushing all the data to the empty Array variable that I declared in the beginning so that I could access them when I click back and forth on the players.
     playerListArray.push({
       url: giphyImg.src,
       playerName: playerName2.innerHTML,
@@ -88,7 +88,7 @@ const getPlayer = async (e) => {
   }
 };
 
-//Creating submit button
+//Creating a submit button.
 const submit = document.querySelector("button");
 submit.addEventListener("click", getGiphy);
 submit.addEventListener("click", getPlayer);
@@ -96,10 +96,11 @@ submit.addEventListener("click", getPlayer);
 //Selecting #player-container
 const listPlayer = document.querySelector("#player-container");
 
-// Creating a list of names on the left side
+// Creating a list of names on the left side.
 function clickSubmit(e) {
   e.preventDefault();
 
+  // This function allows users to only create up to 10 players. If the length of columns is equal to or more than 10, it stops creating the list.
   const columns = document.querySelectorAll(".columns");
   if (columns.length >= 10) {
     return null;
@@ -107,7 +108,9 @@ function clickSubmit(e) {
 
   let divPlayerName = document.createElement("div");
   divPlayerName.className = "columns";
+  // Setting the value of id to playerListArray's length that is converted to string.
   divPlayerName.setAttribute("id", playerListArray.length.toString());
+  console.log(divPlayerName);
 
   let pTag = document.createElement("p");
 
@@ -137,13 +140,14 @@ function clickSubmit(e) {
     false
   );
 
+  // if the input value is not empty, it will append
   if (name2 !== "") {
     listPlayer.append(divPlayerName);
   }
   name2 = "";
 }
 
-// Create Delete Button
+// Creating a delete button
 function createDeleteButton() {
   let deleteButton = document.createElement("button");
   deleteButton.id = "delete";

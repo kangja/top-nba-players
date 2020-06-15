@@ -6,7 +6,7 @@
 
 ## Project Description
 
-"Your 10 Favorite NBA Players" allows users to search for their 10 favorite players in a search box to generate a player's gif and render player's name, team name, position, height, and weight. It renders up to 10 players and the users have the option to remove players using delete buttons. Users have to make sure they have to search for players who are currently in the league. If not, they will not get the full data rendered on the page.
+"Your 10 Favorite NBA Players" allows users to search for their 10 favorite players in a search box to generate a player's gif and to render player's name, team name, position, height, and weight. It renders up to 10 players and the users have the option to remove players using delete buttons. Users have to make sure they search for players who are currently in the league. If not, they will not get the full data rendered on the page.
 
 ## API and Data Sample
 
@@ -217,7 +217,6 @@ The function allows me to get the current element(whatever element that is) in a
 
 }
 ```
-
 
 ## Change Log
 
