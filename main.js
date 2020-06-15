@@ -1,3 +1,6 @@
+// PlayerListArray is set to an empty array so that later I could push data here and access them later.
+
+// Num is set to 0 as of now because it will be used as a global variable and is subject to changed.
 let playerListArray = [];
 let num = 0;
 const giphyImg = document.querySelector("#image");
@@ -13,6 +16,7 @@ const getGiphy = async () => {
     const responseTwo = await axios.get(finalUrl);
 
     const url = responseTwo.data.data[0].images.original.url;
+    // Styling GIFs
     giphyImg.src = url;
     giphyImg.style.width = "300px";
     giphyImg.style.height = "200px";
@@ -74,7 +78,7 @@ const getPlayer = async (e) => {
     weight.style.backgroundColor = "#b39f86";
     weight.style.borderRadius = "25% 15%";
 
-    // I'm pushing all the data to the empty Array variable that I declared in the beginning so that I could access them when I click back and forth on the players.
+    // I'm pushing all the data to the empty array variable(playerListArray) that I declared in the beginning so that I could access them when I click back and forth on the players.
     playerListArray.push({
       url: giphyImg.src,
       playerName: playerName2.innerHTML,
@@ -140,7 +144,7 @@ function clickSubmit(e) {
     false
   );
 
-  // if the input value is not empty, it will append
+  // If the input value is not empty, it will append the div and its innerHTML to listPlayer.
   if (name2 !== "") {
     listPlayer.append(divPlayerName);
   }
@@ -163,7 +167,7 @@ function deleteListItem() {
 
 submit.addEventListener("click", clickSubmit);
 
-// When name is clicked, it replaces values
+// When other player's name is clicked, it replaces values with the clicked player's gif and data.
 function replaceValues() {
   const image = document.querySelector("#image");
   image.src = playerListArray[num].url;
