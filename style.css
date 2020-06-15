@@ -6,10 +6,6 @@ body {
   );
 }
 
-h1 {
-  /* font-weight: bold; */
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -23,7 +19,7 @@ h1 {
 #information {
   display: block;
   text-align: center;
-  color: #f4f3f1;
+  color: white;
   font-style: italic;
   margin-top: 10px;
   font-size: 23px;
@@ -42,8 +38,10 @@ h1 {
 }
 
 #name {
-  width: 226px;
-  font-size: 14px;
+  width: 300px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 #player-container {
@@ -109,12 +107,30 @@ h1 {
   border-radius: 5px;
 }
 
-button {
+#delete {
   margin-left: 8px;
   width: 76px;
   height: 26px;
   margin-top: auto;
   margin-bottom: auto;
+  border-radius: 10px;
+}
+
+#delete:hover {
+  background-color: #70729d;
+}
+
+#submit {
+  margin-left: 8px;
+  width: 76px;
+  height: 26px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-color: #93b1c3;
 }
 
 p {

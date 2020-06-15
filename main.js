@@ -2,7 +2,7 @@ let playerListArray = [];
 let num = 0;
 const giphyImg = document.querySelector("#image");
 
-// Get Giphy
+// Get Giphy for a specific player
 const getGiphy = async () => {
   try {
     const nameTwo = document.querySelector("input").value;
@@ -17,6 +17,7 @@ const getGiphy = async () => {
     giphyImg.style.width = "300px";
     giphyImg.style.height = "200px";
     giphyImg.style.border = "6px ridge #f5d580";
+    giphyImg.style.borderRadius = "25% 15%";
   } catch (error) {
     console.log(`this is an ${error}`);
   }
@@ -38,6 +39,7 @@ const getPlayer = async (e) => {
     playerName2.style.border = "6px ridge #767EA3";
     playerName2.style.width = "191px";
     playerName2.style.backgroundColor = "#767EA3";
+    playerName2.style.borderRadius = "25% 15%";
 
     // Team Name
     const teamName = response.data.data[0].team.full_name;
@@ -45,6 +47,7 @@ const getPlayer = async (e) => {
     teamName2.innerHTML = `<div id="data-container2"><strong id="team-strong">Team Name:</strong> <span id="team-name">${teamName}</span></div>`;
     teamName2.style.border = "6px ridge #388EC6";
     teamName2.style.backgroundColor = "#388EC6";
+    teamName2.style.borderRadius = "25% 15%";
 
     //Position
     const positionData = response.data.data[0].position;
@@ -52,6 +55,7 @@ const getPlayer = async (e) => {
     position.innerHTML = `<div id="data-container3"><strong id = "position-strong">Position:</strong> <span id="position-span">${positionData}</span></div>`;
     position.style.border = "6px ridge #2C5D69";
     position.style.backgroundColor = "#2C5D69";
+    position.style.borderRadius = "25% 15%";
 
     // Height
     const heightInFeet = response.data.data[0].height_feet;
@@ -61,6 +65,7 @@ const getPlayer = async (e) => {
     height.innerHTML = `<div id="data-container4"><strong id="height-strong">Height:</strong> <span id="height-span">${heightInFeet}ft ${heightInInches}inches</span></div>`;
     height.style.border = "6px ridge #848292";
     height.style.backgroundColor = "#848292";
+    height.style.borderRadius = "25% 15%";
 
     // Weight
     const weightInLbs = response.data.data[0].weight_pounds;
@@ -68,6 +73,7 @@ const getPlayer = async (e) => {
     weight.innerHTML = `<div id="data-container5"><strong id="weight-strong">Weight:</strong> <span id="weight-span">${weightInLbs}lbs</span></div>`;
     weight.style.border = "6px ridge #b39f86";
     weight.style.backgroundColor = "#b39f86";
+    weight.style.borderRadius = "25% 15%";
 
     playerListArray.push({
       url: giphyImg.src,
@@ -136,6 +142,7 @@ function clickSubmit(e) {
 // Create Delete Button
 function createDeleteButton() {
   let deleteButton = document.createElement("button");
+  deleteButton.id = "delete";
   deleteButton.innerText = "Delete";
   deleteButton.addEventListener("click", deleteListItem);
   return deleteButton;
