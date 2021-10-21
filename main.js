@@ -1,6 +1,6 @@
 // PlayerListArray is set to an empty array so that later I could push data here and access them later.
 
-// Num is set to 0 as of now because it will be used as a global variable and is subject to be changed.
+// num is set to 0 as of now because it will be used as a global variable and is subject to be changed.
 let playerListArray = [];
 let num = 0;
 const giphyImg = document.querySelector("#image");
@@ -139,7 +139,6 @@ function clickSubmit(e) {
       e = e || window.event;
       let target = e.target;
       num = target.id;
-      console.log(num);
     },
     false
   );
@@ -162,7 +161,8 @@ function createDeleteButton() {
 
 //Deleting player names
 function deleteListItem() {
-  this.parentNode.remove();
+  // this.parentNode.remove();
+  this.parentNode.removeChild();
 }
 
 submit.addEventListener("click", clickSubmit);
