@@ -114,7 +114,6 @@ function clickSubmit(e) {
   divPlayerName.className = "columns";
   // Setting the value of id to playerListArray's length that is converted to string.
   divPlayerName.setAttribute("id", playerListArray.length.toString());
-  console.log(divPlayerName);
 
   let pTag = document.createElement("p");
 
@@ -161,8 +160,7 @@ function createDeleteButton() {
 
 //Deleting player names
 function deleteListItem() {
-  // this.parentNode.remove();
-  this.parentNode.removeChild();
+  this.parentNode.remove();
 }
 
 submit.addEventListener("click", clickSubmit);
