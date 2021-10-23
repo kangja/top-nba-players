@@ -161,6 +161,8 @@ function createDeleteButton() {
 //Deleting player names
 function deleteListItem() {
   this.parentNode.remove();
+  deleteContainer = document.querySelector(".container-three");
+  deleteContainer.remove();
 }
 
 submit.addEventListener("click", clickSubmit);
