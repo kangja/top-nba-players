@@ -32,9 +32,8 @@ body {
 
 .container-three {
   display: flex;
-  padding-left: 10px;
   padding-top: 20px;
-  margin-left: 46px;
+  padding-left: 8.3%;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
